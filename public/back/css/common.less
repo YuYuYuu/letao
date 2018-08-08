@@ -1,4 +1,147 @@
-
- .lt-login{
+.lt-login {
   margin-top: 150px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// 声明类名
+.mar-r {
+  margin-right: 10px;
+}
+.pd-left{
+  padding-left: 20px;
+}
+
+.lt-left.lt-hidebanner{
+  left: -180px;
+}
+.lt-content.lt-hidebanner{
+  padding-left: 0px;
+}
+.lt-header.lt-hidebanner{
+  padding-left: 0px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.current{
+  background: #1D1F21;
+}
+.active{
+  color: #777;
+}
+
+.lt-index {}
+
+.lt-left {
+  background: #222D32;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 100%;
+  z-index: 999;
+  transition: all 1s;
+  .lt-left-top {
+    height: 50px;
+    text-align: center;
+    background: blueviolet;
+    a {
+      font-size: 22px;
+      line-height: 50px;
+      color: #fff;
+    }
+  }
+  .lt-left-center {
+    height: 180px;
+    padding-top: 30px;
+    text-align: center;
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    p {
+      font-size: 20px;
+      color: #fff;
+      margin-top: 10px;
+    }
+  }
+  .lt-left-bottom {
+    ul {
+      li {
+        a {
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          padding-left: 40px;
+          color: #fff;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+.lt-banner {
+  height: 100%;
+  width: 100%;
+}
+
+// 头部
+.lt-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+  padding-left: 180px;
+  background: #3C8DBC;
+  text-align: center;
+  transition: all 1s;    
+  .left {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+  }
+  .right {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+  }
+}
+
+// 下面的内容
+.lt-content {
+  padding-top: 50px;
+  padding-left: 180px;
+  transition: all 1s;    
+  ol {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+
+//模态框
+.lt-modal{
+  padding-left: 180px;
 }

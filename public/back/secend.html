@@ -37,11 +37,11 @@
               <i class="glyphicon glyphicon-list mar-r"></i>
               <span>分类管理</span>
             </a>
-            <div class="child" style="display: none">
+            <div class="child">
               <p class="pd-left">
                 <a href="first.html">一级分类</a>
               </p>
-              <p class="pd-left">
+              <p class="pd-left current">
                 <a href="secend.html">二级分类</a>
               </p>
             </div>
@@ -73,7 +73,10 @@
             <a href="index.html">管理系统</a>
           </li>
           <li>
-            <a href="#">首页</a>
+            <a href="#" class="active">分类管理</a>
+          </li>
+          <li>
+            <a href="secend.html" class="active">二级分类</a>
           </li>
         </ol>
 
@@ -85,24 +88,32 @@
     <!-- 退出按钮模态框 -->
     <div class="lt-modal">
       <!-- 模态框 -->
-        <!-- 了解 tabindex="-1" 如果以后模态框中有input键,tab键选中下一个,er这个属性可以阻止tab键跳脱模态框 -->
+      <!-- 了解 tabindex="-1" 如果以后模态框中有input键,tab键选中下一个,er这个属性可以阻止tab键跳脱模态框 -->
       <div class="modal fade" id="lt-outmodal">
-          <div class="modal-dialog  modal-sm">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">温馨提示</h4>
-              </div>
-              <div class="modal-body">
-                <p><i class="glyphicon glyphicon-info-sign"></i><span>您确定要退出后台管理系统吗?</span></p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary" id="lt-modal-out">退出</button>
-              </div>
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
+        <div class="modal-dialog  modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">温馨提示</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+                <i class="glyphicon glyphicon-info-sign"></i>
+                <span>您确定要退出后台管理系统吗?</span>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-primary" id="lt-modal-out">退出</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
 
 
 
